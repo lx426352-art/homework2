@@ -1,1 +1,57 @@
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
 
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+/* Comment out existing li styling */
+/*
+li {
+    list-style: none;
+}
+*/
+
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+/* Descendent selector: image inside nav */
+nav img {
+    width: 10%;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Only images inside grid */
+.grid img {
+    width: 100%;
+}
+
+/* Flex layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex img {
+    width: 200px;
+}
